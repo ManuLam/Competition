@@ -20,6 +20,6 @@ public static void main(String[]args) {
 	Seq++;              // This counts the amount of Fibonacci terms that passed
 	}
 	System.out.println(AddSum2);
-	System.out.println("\n"+Seq);          // Prints the amount of terms that were passed before it reached the 1000 digit term
+	System.out.println("\n"+Seq);          // Prints the amount of terms that were passed before it reached the 1000 digit term (Answer = 4782)
     }
 }
