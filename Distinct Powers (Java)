@@ -14,11 +14,11 @@ public static void main(String[]args) {
 		for(int b=2; b<=100; b++) {
 			temp = Math.pow(a,b);                           // Allowing a variable to contain the power b to a, and later adding it onto distinctTerm
 
-			if(distinctTerms.contains(temp)==false) {       // A statement to find out duplicates numbers in our array, if not add the term to the ArrayList
+			if(distinctTerms.contains(temp)==false) {       // A statement to find out duplicate numbers in our array, if not add the term to the ArrayList
 				distinctTerms.add(temp);
 			  }
 			}
 		}
-		System.out.print(distinctTerms.size());     //Prints out the size of the array t
+		System.out.print(distinctTerms.size());     //Prints out the size (Unique numbers only) of the array (Answer = 9183)
     }
 }
