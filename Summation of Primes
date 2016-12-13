@@ -1,0 +1,26 @@
+#10 Project Euler
+// Find the sum of all the primes below two million.
+
+import java.math.BigInteger;        //Importing an object to hold numbers larger than a "long"
+public class TwoMillionPrime {
+public static void main(String[]args) {
+	int num = 2000000;          // Target number to reach
+	BigInteger sum = new BigInteger("2");
+	boolean prime = true;
+
+	for(int i=3; i<num; i++) {
+		double a = Math.sqrt((double)i);                // Using the Sieve of Eratosthenes method, I calculated the Prime numbers with SquareRoots
+		for(int j=2; j<=a; j++) {
+			if(i%j==0) {                            // If the number of the root is divisble by the number rising towards the root, It is not a prime
+				prime = false;                  
+				break;
+			}
+		}
+		if(prime==true) {                               // If the number doesn't divide evenly, then the number is unique and is a Prime because it's divisble only by itself and one
+			sum = sum.add(BigInteger.valueOf(i));
+		}
+		prime = true;
+		}
+	System.out.println("Sum of Primes below 2 Million is: "+sum);   // Prints the sum of the Prime numbers below 2 Million (Answer = 142913828922)
+    }
+}
