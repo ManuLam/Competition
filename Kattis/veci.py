@@ -8,3 +8,9 @@ for i in range(len(a)-1, 0, -1):
     break
     
 print(s)
+
+------------- #brute force solution below
+import itertools
+y = input()
+a = [int(''.join(x)) for x in sorted(set(itertools.permutations([b for b in y]))) if int(''.join(x)) > int(y)]
+print(a[0] if len(a) > 0 else 0)
