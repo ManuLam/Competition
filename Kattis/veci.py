@@ -9,7 +9,7 @@ for i in range(len(a)-1, 0, -1):
     
 print(s)
 
-------------- #brute force solution below
+#brute force solution below
 import itertools
 y = input()
 a = [int(''.join(x)) for x in sorted(set(itertools.permutations([b for b in y]))) if int(''.join(x)) > int(y)]
