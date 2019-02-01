@@ -1,0 +1,1 @@
+print(max(__import__("functools", fromlist=['reduce']).reduce(lambda x,y: x*y, map(int, i[j:j+13])) for i in [''.join([x.strip("\n") for x in open("p8.txt")])] for j in range(len(i)-13)))
