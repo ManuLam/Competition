@@ -1,0 +1,1 @@
+print(sum([int(x) for x in str(__import__('math').factorial(100))]))
